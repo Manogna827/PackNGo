@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create your account — PackNGo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=20261014">
+</head>
+<body class="auth-page" data-page="signup">
+  <div id="toast-region" class="toast-region" aria-live="polite"></div><div id="page-notice" class="page-notice" role="alert" hidden></div>
+  <a class="brand auth-brand" href="/"><span class="brand-mark">P</span>Pack<span>N</span>Go</a>
+  <main class="auth-layout">
+    <aside class="auth-photo auth-photo-signup"><div><p class="eyebrow">THE BEST PART IS GOING TOGETHER</p><h2>Good plans.<br><em>Great company.</em></h2><p>Bring your people along. Your trip gets its own shared space from the very start.</p></div></aside>
+    <section class="auth-panel"><div class="auth-form-wrap">
+      <a class="back-link" href="/">← Back home</a><p class="eyebrow">LET’S GET YOU GOING</p><h1>Create your account.</h1><p class="muted">A few details, then you can bring the group together.</p>
+      <form id="auth-form" novalidate>
+        <label for="name">Your name</label><input id="name" name="name" type="text" autocomplete="name" maxlength="80" placeholder="How should we call you?" required>
+        <label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        <label for="password">Password <span class="label-hint">8 characters or more</span></label><div class="password-field"><input id="password" name="password" type="password" autocomplete="new-password" minlength="8" required><button class="password-toggle" type="button" data-toggle-password="password" aria-label="Show password">Show</button></div>
+        <label for="confirm-password">Confirm password</label><div class="password-field"><input id="confirm-password" name="confirmPassword" type="password" autocomplete="new-password" minlength="8" required><button class="password-toggle" type="button" data-toggle-password="confirm-password" aria-label="Show password">Show</button></div>
+        <button class="button button-dark button-full" type="submit">Create account <span aria-hidden="true">↗</span></button>
+      </form>
+      <p class="auth-switch">Already have an account? <a href="/login.html">Log in</a></p><p class="auth-legal">By signing up, you agree to use PackNGo to plan and coordinate trips.</p>
+    </div></section>
+  </main><script type="module" src="/js/auth-form.js"></script>
+</body>
+</html>

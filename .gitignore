@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.*
+!.env.example
+!**/.env.example
+.vercel/
+*.pem
+*.key
+*service-account*.json
+*serviceAccount*.json
+*firebase-adminsdk*.json
+npm-debug.log*
+.DS_Store
+coverage/

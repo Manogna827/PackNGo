@@ -1,0 +1,10 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // PackNGo accesses Firestore only through the authenticated Express API.
+    // Firebase Admin SDK bypasses these client rules and enforces trip membership itself.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

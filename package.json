@@ -1,0 +1,29 @@
+{
+  "name": "packngo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PackNGo collaborative trip planning and coordination",
+  "type": "module",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js",
+    "test": "node --test",
+    "test:acceptance": "node scripts/firebase-acceptance.js",
+    "check": "node --check backend/server.js && node --check backend/routes/api.js && node --check backend/config/firebase.js && node --check backend/lib/errors.js && node --check backend/lib/finance.js && node --check backend/lib/validation.js && node --check backend/middleware/authenticate.js && node --check backend/services/cloudinary.js && node --check frontend/js/api.js && node --check frontend/js/auth-form.js && node --check frontend/js/dashboard.js && node --check frontend/js/firebase.js && node --check frontend/js/home.js && node --check frontend/js/profile.js && node --check frontend/js/trip-forms.js && node --check frontend/js/trip.js && node --check scripts/firebase-acceptance.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@google/genai": "^1.11.0",
+    "cloudinary": "^2.7.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "firebase-admin": "^14.5.0",
+    "helmet": "^8.1.0",
+    "multer": "^2.0.2"
+  }
+}

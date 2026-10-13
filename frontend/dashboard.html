@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your trips — PackNGo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v=20261014">
+</head>
+<body class="app-page">
+  <div id="toast-region" class="toast-region" aria-live="polite"></div><div id="page-notice" class="page-notice" role="alert" hidden></div>
+  <header class="app-header"><a class="brand" href="/"><span class="brand-mark">P</span>Pack<span>N</span>Go</a><nav><a href="/dashboard.html" aria-current="page">My trips</a><a href="/profile.html">Profile</a><button class="button button-quiet button-small" data-logout>Log out</button></nav></header>
+  <main class="dashboard-main">
+    <div class="dashboard-welcome"><div><p class="eyebrow">YOUR SHARED SPACE</p><h1>Where to <em>next?</em></h1><p class="muted">All your group plans, right where you left them.</p></div><div class="welcome-actions"><a class="button button-dark" href="/create-trip.html">＋ Create a trip</a><a class="button button-outline" href="/join-trip.html">Join with a code</a></div></div>
+    <section><div class="section-title-row"><div><p class="eyebrow">THE ADVENTURES AHEAD</p><h2>Your trips</h2></div><span class="subtle-label" id="trip-count"></span></div><div class="trip-grid" id="trip-list" aria-live="polite"><div class="skeleton-card"></div><div class="skeleton-card"></div></div></section>
+    <section class="trash-section"><details><summary>Recently deleted trips <span class="subtle-label">Only the trip owner can restore</span></summary><div class="trip-grid" id="trash-list"></div></details></section>
+    <section class="dashboard-note"><span>✳</span><p><strong>Have a trip idea?</strong> Create a shared space and invite up to nine other people with one code.</p></section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="/"><span class="brand-mark">P</span>Pack<span>N</span>Go</a><p>Plan Together. Organize Everything. Travel Better.</p></footer>
+  <script type="module" src="/js/auth.js"></script><script type="module" src="/js/dashboard.js"></script>
+</body>
+</html>
